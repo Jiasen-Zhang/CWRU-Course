@@ -1,10 +1,10 @@
 # CSDS 497: AI: Statistical NLP  Written Assignment 1
 
-Names and github IDs (if your github ID is not your name or Case ID): 
+Names and github IDs (if your github ID is not your name or Case ID):     
 Zhengyu Fang    
 Yao Fu    
-Tianyi Li
-Jiasen Zhang
+Tianyi Li    
+Jiasen Zhang    
 
 
 1. Is it possible for an automated system to "understand natural language"? Explain your answer in your own words. (10 points)
