@@ -1,8 +1,8 @@
 # CSDS 497: AI: Statistical NLP  Written Assignment 1
 
 Names and github IDs (if your github ID is not your name or Case ID): 
-Zhengyu Fang \\
-Yao Fu
+Zhengyu Fang    
+Yao Fu    
 Tianyi Li
 Jiasen Zhang
 
