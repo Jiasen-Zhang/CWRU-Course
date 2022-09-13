@@ -1,10 +1,15 @@
 # CSDS 497: AI: Statistical NLP  Written Assignment 1
 
 Names and github IDs (if your github ID is not your name or Case ID): 
+Zhengyu Fang
+Yao Fu
+Tianyi Li
+Jiasen Zhang
+
 
 1. Is it possible for an automated system to "understand natural language"? Explain your answer in your own words. (10 points)
 
-ANSWER:
+ANSWER: No, it's impossible. As mentioned in the lecture 2, it's an AI complete problem. 
 
 2. Read Turing's paper, "Computing Machinery and Intelligence," (https://academic.oup.com/mind/article/LIX/236/433/986238) and write a summary (~350 words) of his arguments for the possibility and existence of artificial intelligence. Don't just restate what he said, explain in your own words. (20 points)
 
