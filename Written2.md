@@ -16,9 +16,9 @@ Answer:
 
 10.	Consider the optimization problem $max_{(\lambda, x)} \sum_i \lambda_if_i(x),  \sum_i \lambda_i=1, \lambda_i \geq 0, \(i=1,…,n\)$. Show that $\lambda^\* = (0,…,0,1,0,…0)$ is always a feasible optimal solution regardless of the optimal $x^*$. (20 points)
 
-The given optimization problem is the dual problem of the primal problem: $min_{\lambda} \sum_i \lambda_i$ ,  $\sum_k \lambda_k=f_i(x), \lambda_i \geq 0, \(i=1,…,n\)$. Obviously, the solution of the primal problem is $min_{\lambda} \sum_i \lambda_i = min_{i} f_i(x) = f_k(x)$ and $\lambda^* = (0,…,0,1,0,…0)$ where the k-th enrty of $\lambda^*$ is one. 
-
 Answer:
+
+The given optimization problem is the dual problem of the primal problem: $min_{\lambda} \sum_i \lambda_i$ ,  $\sum_k \lambda_k=f_i(x), \lambda_i \geq 0, \(i=1,…,n\)$. Obviously, the solution of the primal problem is $min_{\lambda} \sum_i \lambda_i = min_{i} f_i(x) = f_k(x)$ and $\lambda^* = (0,…,0,1,0,…0)$ where the k-th enrty of $\lambda^*$ is one. According to the theory of primal-dual method, the solutions of the primal and dual problem are equal. So for the given problem we also have $\lambda^* = (0,…,0,1,0,…0)$ and it's independent of $x^*$.
 
 11.	Write down the dynamic programming recursion for the backward algorithm in HMMs. (10 points)
 
