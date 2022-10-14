@@ -16,6 +16,8 @@ Answer:
 
 10.	Consider the optimization problem $max_{(\lambda, x)} \sum_i \lambda_if_i(x),  \sum_i \lambda_i=1, \lambda_i \geq 0, \(i=1,…,n\)$. Show that $\lambda^\* = (0,…,0,1,0,…0)$ is always a feasible optimal solution regardless of the optimal $x^*$. (20 points)
 
+The given optimization problem is the dual problem of 
+
 Answer:
 
 11.	Write down the dynamic programming recursion for the backward algorithm in HMMs. (10 points)
