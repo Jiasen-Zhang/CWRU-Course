@@ -24,7 +24,8 @@ $\frac{\partial L}{\partial\lambda_i} = f_i - \sum_k u_k - v_i = 0  \quad\righta
 $\rightarrow\quad  \max_{\lambda_i} L =  \sum_i u_i$  
 So the primal problem is: $\min_u \sum_i u_i \quad , \quad \sum_i u_i = f_k \quad , \quad u_i \ge 0 \quad , \quad k = 1,2,3,...$  
     
-Obviously the solution of the primal problem is $\min_k f_k \quad , \quad u^* = (0,...,1,...,0)$ where k-th enrty of $u^*$ is one. Because the solutions of the primal and dual problem are equal. For the given problem we also have $\lambda^\* = (0,…,0,1,0,…0)$ and it's independent of $x^*$.
+Obviously the solution of the primal problem is $\min_k f_k \quad , \quad u^* = (0,...,1,...,0)$ where k-th enrty of $u^*
+$ is one. Because the solutions of the primal and dual problem are equal. For the given problem we also have $\lambda^\* = (0,…,0,1,0,…0)$ and it's independent of $x^*$.
 
 11.	Write down the dynamic programming recursion for the backward algorithm in HMMs. (10 points)
 
