@@ -19,7 +19,7 @@ Answer:
 Answer:
 
 The given optimization problem is the dual problem of the primal problem. To find the primal problem we compute the generalized Larangian:  
-$L(\lambda, x, u, v) = \sum_i \lambda_if_i(x) + \sum_i \sum_k u_k (1-\lambda_i) - \sum_i v_i \lambda_i$ such that $u_i \ge 0, v_i=0$  
+$L(\lambda, x, u, v) = \sum_i \lambda_if_i(x) + \sum_i \sum_k u_k (1-\lambda_i) - \sum_i v_i \lambda_i \quad , \quad u_i \ge 0, v_i=0$  
 $\frac{L}{\lambda_i} = f_i - \sum_k u_k - v_i = 0  \quad\rightarrow\quad f_i - \sum_k u_k = v_i = 0$     
 
 
