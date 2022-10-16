@@ -19,7 +19,8 @@ Answer:
 Answer:
 
 The given optimization problem is the dual problem of the primal problem. To find the primal problem we compute the generalized Larangian:  
-$L(\Lambda, x, u, v) = \sum_i \lambda_if_i(x) + \sum_i \sum_k u_k (1-\lambda_i) - \sum_i v_i \lambda_i$ such that $u_i \ge 0, v_i=0$  
+$L(\lambda, x, u, v) = \sum_i \lambda_if_i(x) + \sum_i \sum_k u_k (1-\lambda_i) - \sum_i v_i \lambda_i$ such that $u_i \ge 0, v_i=0$  
+$\frac{L}{\lambda_i} = f_i - \sum_k u_k - v_i = 0  \quad\rightarrow\quad f_i - \sum_k u_k = v_i = 0$     
 
 
 $min_{\lambda} \sum_i \lambda_i$ ,  $\sum_k \lambda_k=f_i(x), \lambda_i \geq 0, \(i=1,…,n\)$. Obviously, the solution of the primal problem is $\min_k f_k(x)$ and $\lambda^\* = (0,…,0,1,0,…0)$ where the k-th enrty of $\lambda^\* $ is one. According to the theory of primal-dual method, the objective function satisfies KKT conditions so the solutions of the primal and dual problem are equal. So for the given problem we also have $\lambda^\* = (0,…,0,1,0,…0)$ and it's independent of $x^\*$.
