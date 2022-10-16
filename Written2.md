@@ -18,7 +18,7 @@ Answer:
 
 Answer:
 
-The given optimization problem is the dual problem of the primal problem. Define $\Lambda$ To find the primal problem we compute the Larangian:  
+The given optimization problem is the dual problem of the primal problem. Define $\Lambda=(\lambda_1, ... , \lambda_n)$ and $F(x)=(f_1(x), ..., f_n(x))$. To find the primal problem we compute the Larangian:  
 $L(\lambda, x, )$
 
 
