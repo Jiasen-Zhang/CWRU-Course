@@ -7,7 +7,7 @@ Names and github IDs (if your github ID is not your name or Case ID):
 Answer:   
 Suppose the most likely state sequence is $(s_1^\*, ..., s_n^\*) = (k_1, ..., k_n)$,  
 We know that $ \gamma_ k_ i (i) = \max_ p \gamma_ p (i-1) Pr(s_ i^\*=k_ i |S_ {i-1}^\* = p) Pr(o_ i|s_ i^\*=k_ i) 
-= \gamma_{k} (i-1) Pr(s_i^*=k_i |S_{i-1}^* = p) Pr(o_i|s_i^*=k_i) $,
+= \gamma_{k} (i-1) Pr(s_i^\*= k_i |S_{i-1}^\* = p) Pr(o_i|s_i^\*=k_i) $,
 
 
 
