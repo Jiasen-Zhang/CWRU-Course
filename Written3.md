@@ -5,6 +5,11 @@ Names and github IDs (if your github ID is not your name or Case ID):
 12. Prove that the state sequence $s^\*$ returned by the Viterbi algorithm for some observation $o$ from an HMM indeed satisfies $s^\*=\arg\max_s Pr(s|o)$. (10 points)
 
 Answer: 
+We know that $\gamma_k(i) = Pr(o_1, ..., o_i, s_i^* = k)$
+$$ 11$$
+
+
+
 
 13.	Prof. Methodical wants their experiments to be replicable, so they suggest that instead of initializing their HMM parameters randomly as the Baum-Welch algorithm wants, they should start by initializing all parameters to zero. Explain to Prof. Methodical why this might not be a good idea. (10 points)
 
