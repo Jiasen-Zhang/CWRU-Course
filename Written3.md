@@ -7,10 +7,10 @@ Names and github IDs (if your github ID is not your name or Case ID):
 Answer:   
 Suppose the most likely state sequence is $(s_1^\*, ..., s_n^\*) = (k_1, ..., k_n)$. We know that the Viterbi algorithm is:
 $$\gamma_{k_i} (i) = \max_p \gamma_p (i-1) Pr(s_i^\*=k_i |s_{i-1}^\* = p) Pr(o_i|s_i^\*=k_i) $$
-$$\rightarrow\quad \gamma_{k_i} (i) = \gamma_{k_{i-1}} (i-1) Pr(s_i^\*= k_i |s_{i-1}^\* = k_{i-1}) Pr(o_i|s_i^\*=k_i) $$   
-Similarly,    
-$$\gamma_{k_{i-1}} (i-1) = \gamma_{k_{i-2}} (i-2) Pr(s_{i-1}^\*= k_{i-1} |s_{i-2}^\* = k_{i-2}) Pr(o_{i-1}|s_{i-1}^\*=k_{i-1}) $$  
-$$\gamma_{k_1} (1) = \gamma_{START} (0) Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) $$ 
+$$\rightarrow\quad \gamma_{k_i} (i) = \gamma_{k_{i-1}} (i-1) Pr(s_i^\*= k_i |s_{i-1}^\* = k_{i-1}) Pr(o_i|s_i^\*=k_i) $$
+Similarly,
+$$\gamma_{k_{i-1}} (i-1) = \gamma_{k_{i-2}} (i-2) Pr(s_{i-1}^\*= k_{i-1} |s_{i-2}^\* = k_{i-2}) Pr(o_{i-1}|s_{i-1}^\*=k_{i-1}) $$
+$$\gamma_{k_1} (1) = \gamma_{START} (0) Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) $$
 So we have:   
 $$ \gamma_{END}(n) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) \prod $$
 
