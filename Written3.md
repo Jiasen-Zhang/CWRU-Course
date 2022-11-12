@@ -4,7 +4,7 @@ Names and github IDs (if your github ID is not your name or Case ID):
  
 12. Prove that the state sequence $s^\*$ returned by the Viterbi algorithm for some observation $o$ from an HMM indeed satisfies $s^\*=\arg\max_s Pr(s|o)$. (10 points)
 
-Answer: 
+Answer:   
 Suppose the most likely state sequence is $(s_1^*, ..., s_n^*) = (k_1, ..., k_n)$  
 We know that $\gamma_k(i) = Pr(o_1, ..., o_i, s_i^* = k)$  
 $ $
