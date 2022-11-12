@@ -14,7 +14,7 @@ $$\gamma_{k_1} (1) = \gamma_{START} (0) Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) =
 So we have:
 
 $$ \gamma_{END}(n) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) \prod^n_{r=2} Pr(s_r^\*= k_r |s_{r-1}^\* = k_{r-1}) Pr(o_r|s_r^\*=k_r) $$
-$$ \rightarrow\quad \gamma_{END}(n) = Pr( (o_1,...o_n), (s_1,...s_n)) = Pr(o,s) =   $$
+$ \rightarrow\quad \gamma_{END}(n) = Pr( (o_1,...o_n), (s_1,...s_n)) = Pr(o,s) =   $
 
 
 
