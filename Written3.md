@@ -12,7 +12,7 @@ Similarly,
 $$\gamma_{k_{i-1}} (i-1) = \gamma_{k_{i-2}} (i-2) Pr(s_{i-1}^\*= k_{i-1} |s_{i-2}^\* = k_{i-2}) Pr(o_{i-1}|s_{i-1}^\*=k_{i-1}) $$  
 $$\gamma_{k_1} (1) = \gamma_{START} (0) Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) $$ 
 So we have:   
-$$ \gamma_{END}(n) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) \prop $$
+$$ \gamma_{END}(n) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) \prod $$
 
 
 13.	Prof. Methodical wants their experiments to be replicable, so they suggest that instead of initializing their HMM parameters randomly as the Baum-Welch algorithm wants, they should start by initializing all parameters to zero. Explain to Prof. Methodical why this might not be a good idea. (10 points)
