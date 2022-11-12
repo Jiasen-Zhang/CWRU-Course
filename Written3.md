@@ -17,8 +17,7 @@ $$ \gamma_{END}(n) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) \prod^n_{r=2} Pr(s_r
 
 $$ \rightarrow\quad \gamma_{END}(n) = Pr( (o_1,...o_n), (s_1^\*,...s_n^\*)) = Pr(o,s^\*) = \max_s Pr(o,s) = \max_s Pr(s|o)P(o) $$
 
-Therefore, the state sequence returned by Biterbi algorithm satisfies 
-$ s^\* = \arg\max_s Pr(s|o) $.
+Therefore, the state sequence returned by Biterbi algorithm satisfies $s^\*=\arg\max_s Pr(s|o)$.
 
 
 13.	Prof. Methodical wants their experiments to be replicable, so they suggest that instead of initializing their HMM parameters randomly as the Baum-Welch algorithm wants, they should start by initializing all parameters to zero. Explain to Prof. Methodical why this might not be a good idea. (10 points)
