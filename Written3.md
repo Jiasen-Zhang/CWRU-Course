@@ -35,9 +35,9 @@ Answer:
 17.	Give an example of an English sentence which could be difficult to parse with an HMM. Explain in your own words why it could be difficult. (10 points)
 
 Answer:    
-He tries to fire the fire to light the light so that he can walk the walk.
-I think that that that that that student wrote on blackboard is wrong.   
-I know that you know that I know that he know that we know.   
+He tries to fire the fire to light the light so that he can walk the walk.     
+I think that that that that that student wrote on blackboard is wrong.     
+I know that you know that I know that he know that we know.      
 
 
 18.	Prove that the union of two regular languages is regular. (10 points)
