@@ -27,7 +27,8 @@ Answer:
 14.	Suppose we have observations over a set $X=$ \{ $x_0, x_1,\ldots, x_n$ \}, such that the number of observations is $N$ and the $i^{th}$ element is observed $n_i$ times. Find a probability distribution $p^\*$ over $X$ that solves $p^\*=\arg\max_p H(p)$, where $H$ is the entropy function. Explain the significance of $p^\*$ in the context of conditional random fields (CRFs). (20 points)
 
 Answer:     
-Suppose the probability of $x_i$ is $p_i$, then the entropy is $H(p) = -\sum_i p_i \log p_i$. There are two constraints: $\sum_i p_i=1$ and $\sum_i n_i p_i = N/(n+1)$
+Suppose the probability of $x_i$ is $p_i$, then the entropy is $H(p) = -\sum_i p_i \log p_i$. There are two constraints: $\sum_i p_i=1$ and $\sum_i n_i p_i = N/(n+1)$. We can use the method of Lagrange Multipliers: 
+$$ F =  -\sum_i p_i \log p_i + \lambda_1 (\sum_i p_i-1) + \lambda_2 (\sum_i n_i p_i - N/(n+1))$$
 
 16.	Suppose we see a set of $n$ observations $(S,O)=$\{ $(s_1,o_1),\ldots ,(s_n, o_n)$ \}. We learn a CRF $P(s|o)$ with features $f_i(s, o)$ and parameters $\lambda_i$ by maximizing log conditional likelihood. Show that the optimal solution $\lambda^*$ satisfies $\sum_{(s,o)} f_i(s, o)= \sum_{(s,o)} \sum_{s'} P(s'|o) f_i(s', o)$.  (20 points)
 
