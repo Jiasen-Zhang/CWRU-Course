@@ -31,6 +31,11 @@ Suppose the probability of $x_i$ is $p_i$, then the entropy is $H(p) = -\sum_i p
 $$F =  -\sum_i p_i \log p_i + \lambda_1 (\sum_i p_i-1) + \lambda_2 (\sum_i n_i p_i - N/(n+1))$$
 $$\frac{\partial F}{\partial p_i} =-(1+\log p_i) + \lambda_1 + \lambda_2 n_i$$
 $$p_i = e^{\lambda_1 -1} e^{\lambda_2 n_i} $$
+We use the first constraint: 
+$$\sum_i p_i = \sum_i e^{\lambda_1 -1} e^{\lambda_2 n_i} = 1  \quad\rightarrow\quad e^{\lambda_1 -1}= \frac{e^{\lambda_2 n_i}}{\sum_k e^{\lambda_2 n_k}} $$
+
+
+
 
 
 16.	Suppose we see a set of $n$ observations $(S,O)=$\{ $(s_1,o_1),\ldots ,(s_n, o_n)$ \}. We learn a CRF $P(s|o)$ with features $f_i(s, o)$ and parameters $\lambda_i$ by maximizing log conditional likelihood. Show that the optimal solution $\lambda^*$ satisfies $\sum_{(s,o)} f_i(s, o)= \sum_{(s,o)} \sum_{s'} P(s'|o) f_i(s', o)$.  (20 points)
