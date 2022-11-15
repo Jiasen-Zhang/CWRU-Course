@@ -27,13 +27,14 @@ Answer:
 14.	Suppose we have observations over a set $X=$ \{ $x_0, x_1,\ldots, x_n$ \}, such that the number of observations is $N$ and the $i^{th}$ element is observed $n_i$ times. Find a probability distribution $p^\*$ over $X$ that solves $p^\*=\arg\max_p H(p)$, where $H$ is the entropy function. Explain the significance of $p^\*$ in the context of conditional random fields (CRFs). (20 points)
 
 Answer:     
-Suppose the probability of $x_i$ is $p_i$, then the entropy is $H(p) = -\sum_i p_i \log p_i$. There are two constraints: $\sum_i p_i=1$ and $\sum_i n_i p_i = N/(n+1)$. We can use the method of Lagrange Multipliers:
+Suppose the probability of $x_i$ is $p_i$, then the entropy is $H(p) = -\sum_i p_i \log p_i$. There are two constraints: $\sum_i p_i=1$ and $\sum_i n_i p_i = N/(n+1)$. We can use the method of Lagrange Multipliers to find the maximum:
 $$F =  -\sum_i p_i \log p_i + \lambda_1 (\sum_i p_i-1) + \lambda_2 (\sum_i n_i p_i - N/(n+1))$$
 $$\frac{\partial F}{\partial p_i} =-(1+\log p_i) + \lambda_1 + \lambda_2 n_i$$
 $$p_i = e^{\lambda_1 -1} e^{\lambda_2 n_i} $$
 We use the first constraint: 
 $$\sum_i p_i = \sum_i e^{\lambda_1 -1} e^{\lambda_2 n_i} = 1  \quad\rightarrow\quad e^{\lambda_1 -1}= \frac{1}{\sum_k e^{\lambda_2 n_k}} \quad\rightarrow\quad p_i = \frac{e^{\lambda_2 n_i}}{\sum_k e^{\lambda_2 n_k}} $$
-
+So we get the $p^\*$. We use the second constraint to compute $\lambda_2$:
+$$\sum_i n_i e^{\lambda_2 n_i} = N/(n+1) \sum_k e^{\lambda_2 n_k} \quad\rightarrow\quad \lambda_2$$
 
 
 
