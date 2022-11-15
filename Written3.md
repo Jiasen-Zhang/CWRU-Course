@@ -51,7 +51,8 @@ Answer:
 
 20.	Prove that the language $L=$\{ $A^nB^{n-1}$ likes milk \} is not regular, where $A$ and $B$ are sets of terminals. (10 points)
 
-Answer: 
+Answer:      
+L=$\{ $A A^{n-1}B^{n-1}$ likes milk \} 
 
 21.	Explain intuitively why a language $L=$\{ $a^nb^nc^n$ \}  cannot be context free. (Hint: A pushdown automaton to recognize a context free language uses an (infinite) stack as a memory.) (10 points)
 
