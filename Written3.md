@@ -12,11 +12,8 @@ Similarly,
 $$\gamma_{k_{i-1}} (i-1) = \gamma_{k_{i-2}} (i-2) Pr(s_{i-1}^\*= k_{i-1} |s_{i-2}^\* = k_{i-2}) Pr(o_{i-1}|s_{i-1}^\*=k_{i-1}) $$
 $$\gamma_{k_1} (1) = \gamma_{START} (0) Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) \quad \gamma_{START} (0)=1$$
 So we have:
-
-$$ \gamma_{END}(n) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) \prod^n_{r=2} Pr(s_r^\*= k_r |s_{r-1}^\* = k_{r-1}) Pr(o_r|s_r^\*=k_r) $$
-
-$$ \rightarrow\quad \gamma_{END}(n) = Pr( (o_1,...o_n), (s_1^\*,...s_n^\*)) = Pr(o,s^\*) = \max_s Pr(o,s) = \max_s Pr(s|o)P(o) $$
-
+$$\gamma_{END}(n) = Pr(s_{1}^\*= k_{1}) Pr(o_1|s_1^\*=k_1) \prod^n_{r=2} Pr(s_r^\*= k_r |s_{r-1}^\* = k_{r-1}) Pr(o_r|s_r^\*=k_r) $$
+$$\rightarrow\quad \gamma_{END}(n) = Pr( (o_1,...o_n), (s_1^\*,...s_n^\*)) = Pr(o,s^\*) = \max_s Pr(o,s) = \max_s Pr(s|o)P(o) $$
 Therefore, the state sequence returned by Viterbi algorithm satisfies $s^\*=\arg\max_s Pr(s|o)$.
 
 
@@ -33,10 +30,11 @@ $$\frac{\partial F}{\partial p_i} =-(1+\log p_i) + \lambda_1 + \lambda_2 n_i$$
 $$p_i = e^{\lambda_1 -1} e^{\lambda_2 n_i} $$
 We use the first constraint: 
 $$\sum_i p_i = \sum_i e^{\lambda_1 -1} e^{\lambda_2 n_i} = 1  \quad\rightarrow\quad e^{\lambda_1 -1}= \frac{1}{\sum_k e^{\lambda_2 n_k}} \quad\rightarrow\quad p_i = \frac{e^{\lambda_2 n_i}}{\sum_k e^{\lambda_2 n_k}} $$
-So we get the $p^\*$. We use the second constraint to compute $\lambda_2$:
+We use the second constraint to compute $\lambda_2$:
 $$\sum_i n_i e^{\lambda_2 n_i} = N/(n+1) \sum_k e^{\lambda_2 n_k} \quad\rightarrow\quad \lambda_2$$
-
-
+So the optimal probability distribution is:
+$$p_i^\* = \frac{e^{\lambda_2 n_i}}{\sum_k e^{\lambda_2 n_k}} $$
+where $\lambda_2$ is computed by the equation above.
 
 
 16.	Suppose we see a set of $n$ observations $(S,O)=$\{ $(s_1,o_1),\ldots ,(s_n, o_n)$ \}. We learn a CRF $P(s|o)$ with features $f_i(s, o)$ and parameters $\lambda_i$ by maximizing log conditional likelihood. Show that the optimal solution $\lambda^*$ satisfies $\sum_{(s,o)} f_i(s, o)= \sum_{(s,o)} \sum_{s'} P(s'|o) f_i(s', o)$.  (20 points)
