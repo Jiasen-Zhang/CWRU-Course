@@ -45,7 +45,7 @@ $$P(s|o)= \frac{e^{\lambda_i f_i(s,o)}}{\sum_{(s,o)} e^{\lambda_i f_i(s,o)}} \qq
 $$F(\lambda) = \sum_i ( \lambda_i f_i(s,o) - \log \sum_{(s,o)} e^{\lambda_i f_i(s,o)} ) $$
 To find the optimal solution $\lambda^\*$ we need
 $$\frac{\partial F}{\partial \lambda_i} = f_i(s,o) - \frac{\sum_{(s,o)} f_i(s,o) e^{\lambda_i f_i(s,o)}}{\sum_{(s,o)} e^{\lambda_i f_i(s,o)}}=0$$
-$$f_i(s,o) = \sum_{(s,o)} f_i(s,o) \frac{e^{\lambda_i f_i(s,o)}}{\sum_{(s',o)} e^{\lambda_i f_i(s',o)}} $$
+$$f_i(s,o) = \sum_{(s,o)} ( f_i(s,o) \frac{e^{\lambda_i f_i(s,o)}}{\sum_{(s',o)} e^{\lambda_i f_i(s',o)}} ) =  $$
 
 17.	Give an example of an English sentence which could be difficult to parse with an HMM. Explain in your own words why it could be difficult. (10 points)
 
