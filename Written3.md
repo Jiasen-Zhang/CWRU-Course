@@ -41,7 +41,7 @@ where $\lambda_2$ is computed by the equation above.
 
 Answer:     
 For CRF, we have
-$$P(s|o)= \frac{e^{\lambda_i f_i(s,o)}}{\sum_s \lambda_i f_i(s,o)}$$
+$$P(s|o)= \frac{e^{\lambda_i f_i(s,o)}}{\sum_s \lambda_i f_i(s,o)} \qquad \lambda^\* = \arg\max_\lambda \sum_i P(s|o)$$
 
 17.	Give an example of an English sentence which could be difficult to parse with an HMM. Explain in your own words why it could be difficult. (10 points)
 
