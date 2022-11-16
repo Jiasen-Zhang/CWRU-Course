@@ -39,7 +39,9 @@ where $\lambda_2$ is computed by the equation above.
 
 16.	Suppose we see a set of $n$ observations $(S,O)=$\{ $(s_1,o_1),\ldots ,(s_n, o_n)$ \}. We learn a CRF $P(s|o)$ with features $f_i(s, o)$ and parameters $\lambda_i$ by maximizing log conditional likelihood. Show that the optimal solution $\lambda^*$ satisfies $\sum_{(s,o)} f_i(s, o)= \sum_{(s,o)} \sum_{s'} P(s'|o) f_i(s', o)$.  (20 points)
 
-Answer: 
+Answer:     
+For CRF, we have
+$$P(s|o)= \frac{e^{\lambda_i f_i(s,o)}}{\sum_s \lambda_i f_i(s,o)}$$
 
 17.	Give an example of an English sentence which could be difficult to parse with an HMM. Explain in your own words why it could be difficult. (10 points)
 
