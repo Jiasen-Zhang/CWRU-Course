@@ -33,8 +33,7 @@ We use the second constraint to compute $\lambda_2$:
 $$\sum_i n_i e^{\lambda_2 n_i} = N/(n+1) \sum_k e^{\lambda_2 n_k} \quad\rightarrow\quad \lambda_2$$
 So the optimal probability distribution is:
 $$p_i^\* = \frac{e^{\lambda_2 n_i}}{\sum_k e^{\lambda_2 n_k}} $$
-where $\lambda_2$ is computed by the equation above.       
-############## significant！！！
+where $\lambda_2$ is computed by the equation above. The distribution $p^\*$ is similar to that of CRF. Both of them are exponential distribution and that imples that the distribution of CRF also maximes the entropy. 
 
 
 16.	Suppose we see a set of $n$ observations $(S,O)=$\{ $(s_1,o_1),\ldots ,(s_n, o_n)$ \}. We learn a CRF $P(s|o)$ with features $f_i(s, o)$ and parameters $\lambda_i$ by maximizing log conditional likelihood. Show that the optimal solution $\lambda^*$ satisfies $\sum_{(s,o)} f_i(s, o)= \sum_{(s,o)} \sum_{s'} P(s'|o) f_i(s', o)$.  (20 points)
