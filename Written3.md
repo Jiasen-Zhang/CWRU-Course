@@ -69,7 +69,7 @@ Answer:
 
 Answer:      
 According to the pumping lemma, if $L$ is regular, then there are strings $x$, $y$ and $z$ such that $xy^n z\in L$, $\forall n\ge 0$. Suppose the number of A and B is n(A) and n(B).     
-Suppose $y$ consists of $A$ and $xy^n z\in L$, the number of A will be then for any $k>0$, $xy^{n+k} z$ will have 
+Suppose $y$ consists of $A$ and $xy^n z\in L$, then we have n(A)=n(B)+1. But for any $k>0$, for $xy^{n+k} z$ we have n(A)>n(B)+1. So $xy^{n+k} z \nin L$ 
 
 In other words, if $L$ is regular and $xy^n z\in L$, then $xy^{n+1} z\in L$.
 
