@@ -68,10 +68,12 @@ Answer:
 20.	Prove that the language $L=$\{ $A^nB^{n-1}$ likes milk \} is not regular, where $A$ and $B$ are sets of terminals. (10 points)
 
 Answer:      
-According to the pumping lemma, if $L$ is regular, then there are strings $x$, $y$ and $z$ such that $xy^n z\in L$, $\forall n\ge 0$. Suppose the number of A and B is n(A) and n(B).     
-Suppose $y$ consists of $A$ and $xy^n z\in L$, then we have n(A)=n(B)+1. But for any $k>0$, for $xy^{n+k} z$ we have n(A)>n(B)+1. So $xy^{n+k} z \notin L$ 
+According to the pumping lemma, if $L$ is regular, then there are strings $x$, $y$ and $z$ such that $xy^n z\in L$, $\forall n\ge 0$. Suppose the number of A and B is n(A) and n(B), then for $xy^n z\in L$ we have n(A)=n(B)+1.       
+If $y$ consists of $A$, then for $xy^{n+k} z$ with any $k>0$ we have n(A)>n(B)+1. So $xy^{n+k} z \notin L$.      
+Similarly, if $y$ consists of $B$, then for $xy^{n+k} z$ with any $k>0$ we have n(A)<n(B)+1. So $xy^{n+k} z \notin L$.      
+If $y$ consists of $A$ and $B$, then for $xy^{n+k} z$ with any $k>0$, there are some $B$ on the left of $A$. So $xy^{n+k} z \notin L$.     
+Therefore, we cannot find strings that can be pumped in $L$. So $L$ is not regular.
 
-In other words, if $L$ is regular and $xy^n z\in L$, then $xy^{n+1} z\in L$.
 
 21.	Explain intuitively why a language $L=$\{ $a^nb^nc^n$ \}  cannot be context free. (Hint: A pushdown automaton to recognize a context free language uses an (infinite) stack as a memory.) (10 points)
 
