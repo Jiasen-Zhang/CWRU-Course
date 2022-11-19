@@ -68,7 +68,10 @@ Answer:
 20.	Prove that the language $L=$\{ $A^nB^{n-1}$ likes milk \} is not regular, where $A$ and $B$ are sets of terminals. (10 points)
 
 Answer:      
-According to the pumping lemma, if $L$ is regular, then there are strings $x$, $y$ and $z$ such that $xy^n z\in L$, $\forall n\ge 0$. In other words, if $L$ is regular and $xy^n z\in L$, then $xy^{n+1} z\in L$.
+According to the pumping lemma, if $L$ is regular, then there are strings $x$, $y$ and $z$ such that $xy^n z\in L$, $\forall n\ge 0$. Suppose the number of A and B is n(A) and n(B).     
+Suppose $y$ consists of $A$ and $xy^n z\in L$, the number of A will be then for any $k>0$, $xy^{n+k} z$ will have 
+
+In other words, if $L$ is regular and $xy^n z\in L$, then $xy^{n+1} z\in L$.
 
 21.	Explain intuitively why a language $L=$\{ $a^nb^nc^n$ \}  cannot be context free. (Hint: A pushdown automaton to recognize a context free language uses an (infinite) stack as a memory.) (10 points)
 
